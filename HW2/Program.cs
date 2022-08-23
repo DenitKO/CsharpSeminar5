@@ -4,7 +4,7 @@
     int i = 0;
     while (i < LengthOfArr)
     {
-        collection[i] = new Random().Next(1,100);
+        collection[i] = new Random().Next(-99,100);
         i++;
     }
 }
