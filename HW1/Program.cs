@@ -31,10 +31,11 @@ FillArray(array);
 
 PrintArray(array);
 
-int EvenNumbersOfArray(int[] EvenArray, int EvenAmount)
+int EvenNumbersOfArray(int[] EvenArray)
 {
     int EvenNumbers = 0;
     int i = 0;
+    int EvenAmount = EvenArray.Length;
         while (i < EvenAmount)
         {
             if (EvenArray[i] % 2 == 0)
@@ -44,7 +45,7 @@ int EvenNumbersOfArray(int[] EvenArray, int EvenAmount)
     return EvenNumbers;
 }
 
-int answer = EvenNumbersOfArray(array, amount);
+int answer = EvenNumbersOfArray(array);
 
 Console.Write("Из них четных ");
 
